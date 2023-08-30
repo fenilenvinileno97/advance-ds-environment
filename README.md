@@ -1,6 +1,6 @@
 # Final Project
 
-In this awesome project, we will find insights and relevant conclussions about renewable energies.
+In this awesome project, we will find insights and relevant conclussions about COVID-19 cases.
   
 ## Installation guide
 
