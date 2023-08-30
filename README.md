@@ -22,7 +22,7 @@ or
 conda install -c conda-forge cookiecutter
 ```
 
-## Crear un nuevo proyecto
+## Create a new project
 
 In the new directory where you want to save your generated project:
 
