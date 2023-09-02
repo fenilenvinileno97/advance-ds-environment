@@ -12,3 +12,36 @@ def country_cases(countries_set):
     plt.xlabel("Value")
     plt.ylabel("Country Region")
     plt.title("Latam countries in a global context");
+    
+def null_values_proportion(dataframe):
+        (
+        dataframe
+            .isnull()
+            .melt(value_name='missing')
+            .pipe(
+                lambda df: (
+                    sns.displot(
+                        data=df,
+                        y='variable',
+                        hue='missing',
+                        aspect=1.75
+                    )
+                )
+            )
+    )
+        plt.show();
+        
+def heatmap_null_proportion(dataframe):
+        (
+        dataframe
+            .isnull()
+            .T
+            .pipe(
+                lambda df: (
+                    sns.heatmap(
+                        data=df
+                    )
+                )
+            )
+    )
+        plt.show()
