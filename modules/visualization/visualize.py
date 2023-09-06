@@ -44,4 +44,15 @@ def heatmap_null_proportion(dataframe):
                 )
             )
     )
-        plt.show()
+        plt.show();
+        
+        
+def heatmap_corr(dataframe):
+    sns.heatmap(
+    data=dataframe.corr(numeric_only=True),
+    cmap=sns.diverging_palette(20, 200, as_cmap=True),
+    annot=True,
+    linewidths=1.5,
+    linecolor='white'
+    )
+    plt.show();
